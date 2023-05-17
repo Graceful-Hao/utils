@@ -60,6 +60,7 @@ function deepClone1(target, map = new Map()) {
       if (a.prototype) {
         // 有 prototype 就是普通函数
         result = function () {
+          //不能做到100%拷贝，只能保证result这个函数的输入和输出与target保持一致
           return a.apply(this, arguments);
         };
       } else {
