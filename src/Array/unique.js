@@ -18,7 +18,9 @@ function unique(arr) {
  *方法二 利用集合Set
  **/
 function unique1(arr) {
+  // Set 对象允许你存储任何类型的 唯一值
   let s = new Set(arr);
+  // 此时s 是一个类数组对象，Array.from使其变为数组
   let result = Array.from(s);
   return result;
 }
