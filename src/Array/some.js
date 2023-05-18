@@ -1,5 +1,5 @@
 // 必须使用function，不能使用箭头函数，this指向调用的数组
-Array.prototype.mysome = function (fn) {
+Array.prototype.mySome = function (fn) {
   // 判断传入的fn是否为一个函数
   if (typeof fn !== "function") {
     throw new TypeError(`error: ${fn} is not a function`);
